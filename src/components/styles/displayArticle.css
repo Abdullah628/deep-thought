@@ -1,0 +1,42 @@
+
+.text-desc{
+    text-align: center;
+}
+.article-header {
+  width: 90%;
+  margin-top: 0;
+  margin: 1.5rem auto;
+  background: rgb(242, 242, 242);
+  display: flex;
+  gap: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+
+
+.article-header h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 2%;
+  text-align: left;
+}
+
+.intro-content{
+    margin: 20px;
+}
+.intro-content a{
+    text-align: end;
+    margin-right: 20px;
+    color: rgb(96, 97, 97);
+}
+
+.thread-content a{
+    text-align: end;
+    margin-right: 20px;
+    color: rgb(96, 97, 97);
+}

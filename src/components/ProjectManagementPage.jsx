@@ -2,6 +2,8 @@ import "./styles/projectMangement.css";
 import ProjectHeader from "./ProjectHeader";
 import VideoContent from "./VideoContent";
 import ThreadBuild from "./ThreadBuilder";
+import InputArticle from "./InputArticle";
+import DisplayArticle from "./DisplayArticle";
 
 const projectData = {
   _id: "63b64dc9e3b230ebb60a495d",
@@ -74,33 +76,40 @@ function ProjectManagementPage() {
               {task.assets.map((asset, i) => (
                 <div key={i} className="asset">
                   <div className="asset-header">
-                  <h3>{asset.asset_title}</h3>
-                  <i className="fa-solid fa-circle-info"></i>
+                    <h3>{asset.asset_title}</h3>
+                    <i className="fa-solid fa-circle-info"></i>
                   </div>
                   <div className="asset-elements">
-                  <p><b>Description:</b> {asset.asset_description}</p>
-                  {asset.asset_content_type === "video" && (
-                    <VideoContent
-                      asset_content={asset.asset_content}
-                      asset_title={asset.asset_title}
-                    />
-                  )}
-                  {asset.asset_content_type === "threadbuilder" && (
-                    <ThreadBuild/>
-                  )}
-                  {asset.asset_content_type === "article" && (
-                    <div>
-                      <a
-                        href={asset.asset_content}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Read More
-                      </a>
-                    </div>
-                  )}
+                    <p>
+                      <b>Description:</b> {asset.asset_description}
+                    </p>
+                    {asset.asset_content_type === "video" && (
+                      <VideoContent
+                        asset_content={asset.asset_content}
+                        asset_title={asset.asset_title}
+                      />
+                    )}
+                    {asset.asset_content_type === "threadbuilder" && (
+                      <ThreadBuild />
+                    )}
+                    {asset.asset_content_type === "article" &&
+                      asset.asset_type == "input_asset" && (
+                        <>
+                        <hr />
+                        <InputArticle/>
+                        </>
+                        
+                      )}
+
+                    {asset.asset_content_type === "article" &&
+                      asset.asset_type == "display_asset" && (
+                        <>
+                        <hr />
+                          <DisplayArticle href={asset.asset_content}/>
+                        </>
+                        
+                      )}
                   </div>
-                  
                 </div>
               ))}
             </div>
