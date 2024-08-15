@@ -1,5 +1,7 @@
-import './styles/projectMangement.css'
-import ProjectHeader from './ProjectHeader';
+import "./styles/projectMangement.css";
+import ProjectHeader from "./ProjectHeader";
+import VideoContent from "./VideoContent";
+import ThreadBuild from "./ThreadBuilder";
 
 const projectData = {
   _id: "63b64dc9e3b230ebb60a495d",
@@ -12,12 +14,14 @@ const projectData = {
     {
       task_id: 18882,
       task_title: "Explore the world of management",
-      task_description: "As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling, and completion.",
+      task_description:
+        "As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling, and completion.",
       assets: [
         {
           asset_id: 18883,
           asset_title: "Technical Project Management",
-          asset_description: "Story of Alignment Scope of Agility Specific Accountable Staggering Approach",
+          asset_description:
+            "Story of Alignment Scope of Agility Specific Accountable Staggering Approach",
           asset_content: "https://www.youtube.com/embed/TiMRwri1xJ8",
           asset_type: "display_asset",
           asset_content_type: "video",
@@ -25,14 +29,16 @@ const projectData = {
         {
           asset_id: 18884,
           asset_title: "Threadbuild",
-          asset_description: "Watch the video and thread build, and jot out key threads while watching that video.",
+          asset_description:
+            "Watch the video and thread build, and jot out key threads while watching that video.",
           asset_type: "input_asset",
           asset_content_type: "threadbuilder",
         },
         {
           asset_id: 18885,
           asset_title: "Structure you pointers",
-          asset_description: "Write a 400-500 word article, from your thread. Publish your understanding, and showcase your learning to the entire world.",
+          asset_description:
+            "Write a 400-500 word article, from your thread. Publish your understanding, and showcase your learning to the entire world.",
           asset_type: "input_asset",
           asset_content_type: "article",
         },
@@ -40,7 +46,8 @@ const projectData = {
           asset_id: 18886,
           asset_title: "4SA Method",
           asset_description: "To explore more read more",
-          asset_content: "https://dtthon.deepthought.education/sharer?id=01aa3cff-db8e-8d9d-afc0-1671715937878",
+          asset_content:
+            "https://dtthon.deepthought.education/sharer?id=01aa3cff-db8e-8d9d-afc0-1671715937878",
           asset_type: "display_asset",
           asset_content_type: "article",
         },
@@ -59,35 +66,41 @@ function ProjectManagementPage() {
         {tasks.map((task, index) => (
           <section key={index} className="task-section">
             <div className="task-header">
-            <h2>{task.task_title}</h2> 
-            <p>{task.task_description}</p>
+              <h2>{task.task_title}</h2>
+              <p>{task.task_description}</p>
             </div>
+
             <div className="assets">
               {task.assets.map((asset, i) => (
                 <div key={i} className="asset">
+                  <div className="asset-header">
                   <h3>{asset.asset_title}</h3>
-                  <p>{asset.asset_description}</p>
+                  <i className="fa-solid fa-circle-info"></i>
+                  </div>
+                  <div className="asset-elements">
+                  <p><b>Description:</b> {asset.asset_description}</p>
                   {asset.asset_content_type === "video" && (
-                    <iframe
-                      src={asset.asset_content}
-                      title={asset.asset_title}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
+                    <VideoContent
+                      asset_content={asset.asset_content}
+                      asset_title={asset.asset_title}
+                    />
                   )}
                   {asset.asset_content_type === "threadbuilder" && (
-                    <div>
-                      <textarea placeholder="Enter your threads here..."></textarea>
-                    </div>
+                    <ThreadBuild/>
                   )}
                   {asset.asset_content_type === "article" && (
                     <div>
-                      <a href={asset.asset_content} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={asset.asset_content}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Read More
                       </a>
                     </div>
                   )}
+                  </div>
+                  
                 </div>
               ))}
             </div>
