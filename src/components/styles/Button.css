@@ -1,0 +1,18 @@
+.custom-button {
+  font-family: poppins;
+  border-radius: 10px;
+  background: rgb(0, 41, 255);
+  color: white; /* White text color */
+  padding: 5px 20px; /* Padding for a consistent size */
+  border: none; 
+  /* height:  */
+  font-size: 12px;
+
+  font-weight: 500;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.custom-button:hover {
+  background-color: #003bb5; /* Darker blue on hover */
+}

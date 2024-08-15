@@ -1,0 +1,23 @@
+header {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content:space-between;
+  /* margin-bottom: 2rem; */
+
+}
+
+header h2 {
+  color: rgb(0, 41, 255);
+font-family: Poppins;
+font-size: 28px;
+font-weight: 700;
+line-height: 42px;
+letter-spacing: 2%;
+text-align: left;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}

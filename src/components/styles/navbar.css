@@ -1,0 +1,71 @@
+/* Navbar.css */
+
+
+.navbar{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .nav-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .brand-highlight {
+    color: #0056F6; /* Blue color matching the design */
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 10px;
+  }
+  
+  .icon i{
+    background-color: #3683F0;
+    border-radius: 50%;
+    width: 20px;
+    height: 1rem;
+    font-size: 16px;
+    margin-left: 15px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
