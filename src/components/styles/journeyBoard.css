@@ -1,0 +1,92 @@
+/* JourneyBoard.css */
+
+.journey-board {
+  position: fixed;
+  top: 3.6rem;
+  left: -250px; /* Start hidden on the left */
+  width: 350px;
+  height: 60%;
+  background-color: white;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+  
+  border-radius: 0 10px 10px 0;
+  transition: left 0.3s ease-in-out; /* Smooth transition */
+  z-index: 1000;
+  font-family: poppins;
+}
+
+.journey-board.open {
+  left: 0; /* Slide in from the left */
+  
+}
+.journey-board-heading {
+  padding: 7px 20px;
+  /* padding-right: 20px; */
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  border-radius: 15px 15px 0px 0px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.toggle-button {
+  position: relative;
+  border: 1px solid slateblue;
+
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.full-content {
+  padding: 20px;
+  
+}
+
+.full-content h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+}
+
+.full-content ul {
+  /* list-style-type: none; */
+  padding: 20px;
+}
+
+.full-content li {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.placeholder-content {
+  border: 1px solid rgb(0, 41, 255);
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 20px;
+  display: inline;
+  display: flex;
+  margin-left: 270px;
+  margin-top: 2rem;
+}
+
+.placeholder-content p {
+  color: rgb(0, 41, 255);
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+  letter-spacing: 2%;
+  /* text-align: right; */
+  padding: 0 1.5rem;
+}

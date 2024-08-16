@@ -4,6 +4,8 @@ import VideoContent from "./VideoContent";
 import ThreadBuild from "./ThreadBuilder";
 import InputArticle from "./InputArticle";
 import DisplayArticle from "./DisplayArticle";
+import Footer from "./Footer";
+import JourneyBoard from "./JourneyBoard";
 
 const projectData = {
   _id: "63b64dc9e3b230ebb60a495d",
@@ -58,15 +60,18 @@ const projectData = {
   ],
 };
 
-function ProjectManagementPage() {
+const ProjectManagementPage =()=> {
   const { title, tasks } = projectData;
 
   return (
+    <>    
+    <JourneyBoard />
     <div className="project-management-page">
       <ProjectHeader title={title} />
       <main>
         {tasks.map((task, index) => (
           <section key={index} className="task-section">
+            
             <div className="task-header">
               <h2>{task.task_title}</h2>
               <p>{task.task_description}</p>
@@ -74,7 +79,11 @@ function ProjectManagementPage() {
 
             <div className="assets">
               {task.assets.map((asset, i) => (
+                
+                
                 <div key={i} className="asset">
+                  
+                  
                   <div className="asset-header">
                     <h3>{asset.asset_title}</h3>
                     <i className="fa-solid fa-circle-info"></i>
@@ -116,7 +125,9 @@ function ProjectManagementPage() {
           </section>
         ))}
       </main>
-    </div>
+      <Footer/>
+    </div></>
+
   );
 }
 

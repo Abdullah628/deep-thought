@@ -1,0 +1,18 @@
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: end;
+    margin-top: -10rem;
+}
+
+.footer-content a{
+    width: 4rem;
+    height: 4rem;
+    padding: 10px;
+    background:rgb(0, 41, 255);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 50%;
+}
