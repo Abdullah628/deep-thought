@@ -6,6 +6,7 @@ import InputArticle from "./InputArticle";
 import DisplayArticle from "./DisplayArticle";
 import Footer from "./Footer";
 import JourneyBoard from "./JourneyBoard";
+import NoticeBoard from "./NoticeBoard";
 
 const projectData = {
   _id: "63b64dc9e3b230ebb60a495d",
@@ -66,6 +67,7 @@ const ProjectManagementPage =()=> {
   return (
     <>    
     <JourneyBoard />
+    <NoticeBoard/>
     <div className="project-management-page">
       <ProjectHeader title={title} />
       <main>

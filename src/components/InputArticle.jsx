@@ -19,7 +19,7 @@ function InputArticle() {
         />
       </div>
       <div className="input-group">
-        <label htmlFor="content">Content</label>
+        <label >Content</label>
         <div className="content-editor">
           <span>File</span>
           <span>Edit</span>
@@ -29,11 +29,11 @@ function InputArticle() {
           <span>Tools</span>
           <span>Table</span>
           <span>Help</span>
-          <span>icon</span>
-          <span>icon</span>
-          <span>icon</span>
+          <span><i className="fa-solid fa-arrow-turn-up"></i></span>
+          <span><i className="fa-solid fa-arrow-turn-down"></i></span>
+          <span><i className="fa-solid fa-maximize"></i></span>
           <span>paragraph</span>
-          <span>icon</span>
+          <span><i className="fa-solid fa-ellipsis"></i></span>
         </div>
         <textarea name="text" placeholder="Write Text Here" id=""></textarea>
       </div>

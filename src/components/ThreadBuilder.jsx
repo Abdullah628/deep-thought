@@ -39,8 +39,8 @@ function ThreadBuilder() {
             <div className="icons">
               <a href=""><i className="fa-sharp fa-solid fa-lightbulb"></i></a>
               <a href=""><i className="fa-solid fa-message"></i></a>
-              <a href=""><i className="fa-sharp fa-solid fa-lightbulb"></i></a>
-              <a href=""><i className="fa-solid fa-download"></i></a>
+              <a href=""><i className="fa-solid fa-file-circle-question"></i></a>
+              <a href=""><i className="fa-solid fa-spa"></i></a>
     
               {/* <span role="img" aria-label="download" className="icon">
                 ⬇️

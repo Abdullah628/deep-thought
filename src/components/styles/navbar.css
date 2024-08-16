@@ -62,6 +62,18 @@
     text-align: center;
     
   }
+
+  .last-icon i{
+    
+    border-radius: 50%;
+    width: 20px;
+    height: 1rem;
+    font-size: 16px;
+    margin-left: 15px;
+    padding: 5px;
+    color: #3683F0;
+    text-align: center;
+  }
   
   .profile-pic {
     width: 30px;

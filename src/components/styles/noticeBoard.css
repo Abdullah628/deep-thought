@@ -1,0 +1,51 @@
+/* NoticeBoard.css */
+
+.notice-board {
+  position: fixed;
+  top: 30%;
+  right: -200px; 
+  width: 300px;
+  height: auto;
+  transform: translateY(-50%);
+  font-family: poppins;
+  color: white;
+  border-radius: 30px 0px 0px 30px;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(255, 255, 255);
+  transition: right 0.3s ease-in-out; /* Smooth transition */
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.notice-board-header {
+  display: flex;
+  gap: 10px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 15px;
+  font-size: 18px;
+  background-color: black;
+}
+
+.notice-board-header .close-button {
+  position: relative;
+  /* top: 5px; */
+  /* left: 5px; */
+  cursor: pointer;
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.notice-board-content {
+  padding: 20px;
+  display: none; /* Hide content initially */
+}
+
+.notice-board.open .notice-board-content {
+  display: block; /* Show content when expanded */
+}

@@ -31,13 +31,11 @@
   display: flex;
   justify-content: space-between;
 }
-.toggle-button {
-  position: relative;
-  border: 1px solid slateblue;
 
+.journey-board-heading .toggle-button {
+  position: relative;
   right: 0;
   background-color: white;
-  border: 1px solid #ddd;
   border-radius: 50%;
   padding: 4px;
   cursor: pointer;

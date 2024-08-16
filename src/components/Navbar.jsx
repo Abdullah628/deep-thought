@@ -22,12 +22,18 @@ function Navbar() {
             <a className="icon" href="">
               <i className="fa-solid fa-bell"></i>
             </a>
+            
           </div>
           <img
-            src="/path-to-profile-pic.png"
+            src="/src/assets/profile.png"
             alt="Profile"
             className="profile-pic"
           />
+
+            <a className="last-icon" href="">
+            <i className="fa-solid fa-ellipsis-vertical"></i>
+            </a>
+
         </div>
       </div>
     </nav>

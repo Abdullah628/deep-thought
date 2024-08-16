@@ -10,13 +10,17 @@
   margin-bottom: 20px;
 }
 .input-group .content-editor {
+  font-family: poppins;
   display: flex;
-  gap: 10px;
+  gap: 13px;
 
   flex-wrap: wrap;
   box-shadow: -2px 2px 6px 0px rgba(0, 0, 0, 0.15);
   background: rgb(252, 251, 251);
   padding: 10px;
+
+  color: rgb(97, 97, 97);
+  font-family: Poppins;
 }
 
 .input-group textarea {
