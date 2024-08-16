@@ -13,7 +13,7 @@ function NoticeBoard() {
         <p>Notice Board</p>
       </div>
       
-      
+       
     </div>
   );
 }

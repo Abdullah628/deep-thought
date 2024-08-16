@@ -85,7 +85,7 @@ const JourneyBoard = () => {
             {tasks.map((task, index) => (
               <>
                 <li key={index}>
-                  <h3>{task.task_title}</h3>
+                  <h3 key={index}>{task.task_title}</h3>
                 </li>
                 {task.assets.map((asset,i)=>(
                     <li key={i}>{asset.asset_title}</li>
