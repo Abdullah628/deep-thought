@@ -3,7 +3,8 @@
 
 
 
-![Project Banner](file:///home/abdullah/Pictures/Screenshots/Screenshot%20from%202024-08-16%2016-16-20.png)
+<p align="center"><img align="center" src="https://i.ibb.co/ZJ7N3ND/Screenshot-from-2024-08-16-16-16-20.png" alt="screenshot1" /> </p>
+
 
 # How to Run the Project
 
