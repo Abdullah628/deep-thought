@@ -2,8 +2,9 @@
 
 
 
+<p align="center"><img align="center" src="https://i.ibb.co/nLWFD7j/Screenshot-from-2024-08-16-16-15-55.png" alt="screenshot1" /> </p>
 
-<p align="center"><img align="center" src="https://i.ibb.co/ZJ7N3ND/Screenshot-from-2024-08-16-16-16-20.png" alt="screenshot1" /> </p>
+<p align="center"><img align="center" src="https://i.ibb.co/ZJ7N3ND/Screenshot-from-2024-08-16-16-16-20.png" alt="screenshot2" /> </p>
 
 
 # How to Run the Project
