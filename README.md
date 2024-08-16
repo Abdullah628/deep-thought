@@ -1,4 +1,4 @@
-# React + Vite
+# Deep Thought
 
 
 
@@ -22,3 +22,9 @@ To get started with the project, follow the steps below:
 
    ```bash
    npm install
+
+4. **run the site**  
+   Run the following command to run the site in your localhost:
+
+   ```bash
+   npm run dev
